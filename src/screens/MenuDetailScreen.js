@@ -107,7 +107,7 @@ const MenuDetailScreen = ({navigation}) => {
       ]}/>
             </VictoryChart>        
             <Text style={{alignSelf: 'flex-end', right: 5, bottom: 35, fontWeight: 'bold'}} >mg/dL</Text>
-            <Text style={{paddingRight:15, paddingLeft: 15}}>This item is bad for your HDL level. It has white bread, fried chicken, and saturated oils.</Text>
+            <Text style={{paddingRight:15, paddingLeft: 15}}>{MLFoodRecommendation.predict{{foodElements: this.hdl, this.sodium, this.hdl, this.ldl, this.potassium, this.hemoglobin}</Text>
               <TouchableOpacity style={{top: 10}}
             onPress={toggleModal1}><Text style={{color: '#03a1fc'}}>Close</Text>
          </TouchableOpacity>
@@ -177,8 +177,7 @@ const MenuDetailScreen = ({navigation}) => {
       ]}/>
             </VictoryChart>        
             <Text style={{alignSelf: 'flex-end', right: 5, bottom: 35, fontWeight: 'bold'}} >mg/dL</Text>
-            <Text style={{paddingRight:15, paddingLeft: 15}}>This item is bad for your LDL level. 
-            It has 4g of saturated fat, and it has white bread. This will raise your LDL</Text>
+            <Text style={{paddingRight:15, paddingLeft: 15}}>{MLFoodRecommendation.predict{{foodElements: this.hdl, this.sodium, this.hdl, this.ldl, this.potassium, this.hemoglobin}</Text>
               <TouchableOpacity style={{top: 10}}
             onPress={toggleModal2}><Text style={{color: '#03a1fc'}}>Close</Text>
          </TouchableOpacity>
@@ -256,9 +255,7 @@ const MenuDetailScreen = ({navigation}) => {
       ]}/>
             </VictoryChart>        
             <Text style={{alignSelf: 'flex-end', right: 5, bottom: 35, fontWeight: 'bold'}} >mg/dL</Text>
-            <Text style={{paddingRight:15, paddingLeft: 15}}>This item has 1670 mg or almost 2g of Sodium, 
-            which is more than 70% of your allotted daily value! Your sodium level is already out of the 
-            healthy range. Avoid this meal! </Text>
+            <Text style={{paddingRight:15, paddingLeft: 15}}>{MLFoodRecommendation.predict{{foodElements: this.hdl, this.sodium, this.hdl, this.ldl, this.potassium, this.hemoglobin} </Text>
               <TouchableOpacity style={{top: 10}}
             onPress={toggleModal3}><Text style={{color: '#03a1fc'}}>Close</Text>
          </TouchableOpacity>
