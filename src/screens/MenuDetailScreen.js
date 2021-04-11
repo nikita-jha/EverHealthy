@@ -107,7 +107,7 @@ const MenuDetailScreen = ({navigation}) => {
       ]}/>
             </VictoryChart>        
             <Text style={{alignSelf: 'flex-end', right: 5, bottom: 35, fontWeight: 'bold'}} >mg/dL</Text>
-            <Text style={{paddingRight:15, paddingLeft: 15}}>{MLFoodRecommendation.predict{{foodElements: this.hdl, this.sodium, this.hdl, this.ldl, this.potassium, this.hemoglobin}</Text>
+            <Text style={{paddingRight:15, paddingLeft: 15}}>{MLFoodRecommendation.predict{{foodElements: this.calcium, this.glucose, this.hdl, this.ldl, this.sodium, this.hemoglobin, this.potassium}</Text>
               <TouchableOpacity style={{top: 10}}
             onPress={toggleModal1}><Text style={{color: '#03a1fc'}}>Close</Text>
          </TouchableOpacity>
@@ -177,7 +177,7 @@ const MenuDetailScreen = ({navigation}) => {
       ]}/>
             </VictoryChart>        
             <Text style={{alignSelf: 'flex-end', right: 5, bottom: 35, fontWeight: 'bold'}} >mg/dL</Text>
-            <Text style={{paddingRight:15, paddingLeft: 15}}>{MLFoodRecommendation.predict{{foodElements: this.hdl, this.sodium, this.hdl, this.ldl, this.potassium, this.hemoglobin}</Text>
+            <Text style={{paddingRight:15, paddingLeft: 15}}>{MLFoodRecommendation.predict{{foodElements: this.calcium, this.glucose, this.hdl, this.ldl, this.sodium, this.hemoglobin, this.potassium}</Text>
               <TouchableOpacity style={{top: 10}}
             onPress={toggleModal2}><Text style={{color: '#03a1fc'}}>Close</Text>
          </TouchableOpacity>
@@ -255,7 +255,7 @@ const MenuDetailScreen = ({navigation}) => {
       ]}/>
             </VictoryChart>        
             <Text style={{alignSelf: 'flex-end', right: 5, bottom: 35, fontWeight: 'bold'}} >mg/dL</Text>
-            <Text style={{paddingRight:15, paddingLeft: 15}}>{MLFoodRecommendation.predict{{foodElements: this.hdl, this.sodium, this.hdl, this.ldl, this.potassium, this.hemoglobin} </Text>
+            <Text style={{paddingRight:15, paddingLeft: 15}}>{MLFoodRecommendation.predict{{foodElements: this.calcium, this.glucose, this.hdl, this.ldl, this.sodium, this.hemoglobin, this.potassium}</Text>
               <TouchableOpacity style={{top: 10}}
             onPress={toggleModal3}><Text style={{color: '#03a1fc'}}>Close</Text>
          </TouchableOpacity>
