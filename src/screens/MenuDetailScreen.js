@@ -29,14 +29,12 @@ const MenuDetailScreen = ({navigation}) => {
     setModalVisible3(!isModalVisible3);
   };
     return <ScrollView style={styles.container}>
-        <Text style={{alignSelf: 'center', top: 35, fontSize: 25, fontWeight: 'bold'}}>Spicy Chicken Sandwich</Text>
-        <Image source={require('../../assets/Sandwich.png')} style={styles.image} /> 
+        <Text style={{alignSelf: 'center', top: 35, fontSize: 25, fontWeight: 'bold'}}>{foodItem.Name}</Text>
+        <Image source={require('../../assets/foodItem.png')} style={styles.image} /> 
         <Text style={{color: '#509de6', alignSelf: 'center', fontWeight: 'bold', fontSize: 25, bottom: 25}}>Personal Reccomendation:</Text>
-        <Text style={{color: '#ff1100', alignSelf: 'center', fontWeight: 'bold', fontSize: 20, bottom: 20}}>Avoid This Meal!</Text>
+        <Text style={{color: '#ff1100', alignSelf: 'center', fontWeight: 'bold', fontSize: 20, bottom: 20}}>{MLFoodRecommendation.predict{this.user.recommendation}</Text>
         <View style={{backgroundColor: '#c0dffc', height: 65, width: 325, alignSelf: 'center'}}>
-        <Text style={{color: '#000000', alignSelf: 'center', fontSize:15}}>Your cholesterol and 
-        sodium levels are already in the unhealthy range. This meal is high in saturated fat and 
-        sodium! 
+        <Text style={{color: '#000000', alignSelf: 'center', fontSize:15}}>{MLFoodRecommendation.predict{this.user.recommendationText}
         </Text>
         </View>
         <View style={styles.card}>
@@ -77,7 +75,7 @@ const MenuDetailScreen = ({navigation}) => {
             <View style={{width: 300, height: 300, alignItems: 'center', justifyContent: 'center',
 
 }}>
-            <Text style={{fontWeight: 'bold', fontSize: 15}}>Your HDL Level: 20 mg/dl</Text>
+            <Text style={{fontWeight: 'bold', fontSize: 15}}>Your HDL Level: {MLFoodRecommendation.predict{this.user.HDL}.} mg/dl</Text>
             <Text style={{alignSelf: 'center', top: 25}}>🔴 = Your Level</Text>
             <VictoryChart height={140}>
       <VictoryAxis style={{ 
@@ -147,7 +145,7 @@ const MenuDetailScreen = ({navigation}) => {
             <View style={{width: 300, height: 300, alignItems: 'center', justifyContent: 'center',
 
 }}>
-            <Text style={{fontWeight: 'bold', fontSize: 15}}>Your LDL Level: 183 mg/dl</Text>
+            <Text style={{fontWeight: 'bold', fontSize: 15}}>Your LDL Level: {this.user.LDL} mg/dl</Text>
             <Text style={{alignSelf: 'center', top: 25}}>🔴 = Your Level</Text>
             <VictoryChart height={140}>
       <VictoryAxis style={{ 
